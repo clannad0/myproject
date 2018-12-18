@@ -1,0 +1,188 @@
+/* CSS Document */
+/*公共样式的*/
+html, body, div, ul, ol, li, dl, dt, dd, h1, h2, h3, h4, h5, h6, form, p, blockquote, fieldset, legend, input, nav, header, footer, section, articel, figure, figcaption, video, audio {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+h1, h2, h3, h4, h5, h6, em, i, b, strong {
+	font-size: 100%;
+	font-weight: 200;
+	font-style: normal;
+}
+ul, ol, li {
+	list-style: none;
+}
+fieldset, img {
+	border: 0 none;
+	vertical-align: middle;
+	display: block;
+}
+table {
+	border-collapse: collapse;
+}
+input, select, textarea, button {
+	outline: none;
+}
+:focus {
+	outline: none;
+}
+/*超链接*/
+a {
+	color: #1f2225;
+}
+a:link, a:visited {
+	color: #1f2225;
+	text-decoration: none;
+}
+a:hover {
+	color: #ecb765;
+}
+/*浮动*/
+.fl {
+	float: left;
+}
+.fr {
+	float: right;
+}
+/*自适应高度   清除浮动*/
+.clearfix:after {
+	content: '';
+	display: block;
+	clear: both;
+	height: 0;
+	line-height: 0;
+	visibility: hidden;
+}
+.clearfix {
+	zoom: 1;
+}
+/*版心*/
+.wrap {
+	width: 1200px;
+	margin: 0 auto;
+}
+body {
+	font-size: 14px;
+	font-family: "微软雅黑", Arial;
+	color: #1f2225;
+}
+/*header*/
+#header {
+}
+.header {
+	width: 100px;
+	width: 1200px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+.header h1 {
+	display: block;
+	float: left;
+}
+.header ul {
+	float: left;
+	overflow: hidden;
+	margin-left: 60px;
+}
+.header ul li {
+	float: left;
+	height: 110px;
+	width: 80px;
+	margin-right: 20px;
+	text-align: center;
+	line-height: 100px;
+	box-sizing: border-box;
+}
+.header ul li:hover a {
+	color: #E60012;
+}
+.header ul li:hover {
+	border-bottom: 4px solid #E60012;
+}
+.header ul li a {
+	display: block;
+	font-size: 14px;
+	color: #333333;
+}
+.header .tel {
+	display: block;
+	float: right;
+}
+.fixed{position:fixed; top:0px; left:50%; margin-left:-600px; background:rgba(255,255,255,0.8); z-index:1000; height:110px;}
+/*header 结束*/
+
+/*footer*/
+#footer {
+	width: 100%;
+	height: 300px;
+	background: #2341A4;
+	color: white;
+	overflow: hidden;
+}
+.footer {
+	width: 1200px;
+	height: 300px;
+	margin: 0 auto;
+	position: relative;
+}
+.footer .footer_l {
+	margin-left: 30px;
+	float: left;
+}
+.footer .footer_l dl {
+	margin-top: 50px;
+}
+.footer .footer_l dl dt {
+	margin-bottom: 25px;
+}
+.footer .footer_l dl dd {
+}
+.footer .footer_l dl dt a {
+	color: white;
+	font-weight: 800;
+	font-size: 18px
+}
+.footer .footer_l dl dd a {
+	color: white;
+	font-size: 14px;
+	line-height: 30px;
+}
+.footer .footer_c {
+	float: left;
+	margin-left: 186px;
+}
+.footer .footer_c p {
+	font-size: 14px;
+	line-height: 30px;
+	margin-top: 50px;
+}
+.footer .footer_c p span {
+	display: block;
+	font-size: 18px;
+	margin-bottom: 15px;
+}
+.footer .footer_r {
+	float: right;
+}
+.footer:before {
+	content: "";
+	display: block;
+	width: 1px;
+	height: 190px;
+	background: #C1C1C1;
+	position: absolute;
+	top: 50px;
+	left: 180px;
+}
+.footer:after {
+	content: "";
+	display: block;
+	width: 1px;
+	height: 190px;
+	background: #C1C1C1;
+	position: absolute;
+	top: 50px;
+	right: 450px;
+}
+/*footer 结束*/
